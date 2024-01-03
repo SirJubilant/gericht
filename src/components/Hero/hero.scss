@@ -1,0 +1,116 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+
+.hero {
+    background: $secondary-clr;
+    padding: 3rem 4rem;
+
+    .hero__content {
+        @include flex;
+        gap: 0rem;
+
+        &-left {
+            @include flex;
+            flex: 1;
+            // flex-basis: 50rem;
+            gap: 7rem;
+
+
+            .hashes {
+                @include flex;
+                margin-left: 1.7rem;
+                writing-mode: vertical-lr;
+                rotate: 180deg;
+                font-size: 1.4rem;
+            }
+
+            .left__content {
+
+                &-header {
+                    font-size: 2.3rem;
+                    color: $white-clr;
+                    line-height: 130%;
+                    /* 29.9px */
+                    letter-spacing: 0.92px;
+
+                    img {
+                        padding-top: 4px;
+                    }
+
+                }
+
+                &-header2 {
+                    font-size: 5rem;
+                    // line-height: 117px;
+                    letter-spacing: 3.6px;
+                   
+                }
+
+                &-text {
+                    font-size: 1.4rem;
+                    padding: 3rem 0;
+                    // line-height: 1.1;
+                    color: $tetiary-clr;
+                   
+
+
+
+
+
+                    font-weight: 400;
+                    line-height: 175%;
+                    /* 28px */
+                    letter-spacing: 0.64px;
+                }
+
+            }
+
+        }
+
+        // hero image
+        &-right {
+            // flex: 1;
+            // flex-basis: 60rem;
+            position: relative;
+
+            // .hero-img {
+            //     z-index: 10000;
+            // }
+
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-color: $accent-clr;
+                width: 30%;
+                height: 50%;
+                top: -4%;
+                right: 20%;
+                z-index: 1;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                background-color: $accent-clr;
+                width: 30%;
+                height: 50%;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.hero-img::before {
+    position: absolute;
+    content: '';
+    background-color: $accent-clr;
+    width: 35%;
+    height: 60%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}

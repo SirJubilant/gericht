@@ -1,0 +1,14 @@
+/* color vars */
+/* font vars */
+@font-face {
+  font-family: "Cormorant Upright", serif;
+  src: url(/src/assets/fonts/CormorantUpright-Medium.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Bestermind";
+  src: url(/src/assets/fonts/BestermindRegular.ttf);
+}/*# sourceMappingURL=Variables.css.map */

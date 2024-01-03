@@ -1,0 +1,37 @@
+@import '../../Styles/Variables/Variables';
+@import '../../Styles/reset';
+
+.header {
+    padding: 3rem 4rem;
+    background: $primary-clr;
+
+    &__nav {
+        @include flex;
+        justify-content: space-evenly;
+        margin-left: auto;
+
+        .logo {
+                text-transform: uppercase;
+                font-family: $headerFont;
+                font-size: 2.8rem;
+            }
+         
+        &-items {   
+            @include flex;
+            margin-left: auto;
+          
+         }
+
+         &-items2 {
+            margin-left: auto;
+            @include flex;
+          
+         }
+
+         &-item {
+                padding-right: 1.6rem;
+                font-size: 1.6rem;
+         }
+    }
+
+    }

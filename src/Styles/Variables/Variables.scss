@@ -1,0 +1,43 @@
+    /* color vars */
+    $accent-clr: #DCCA87;
+    $secondary-clr: #040404;
+    $tetiary-clr: #AAAAAA;
+    $primary-clr: #0c0b08;
+    $white-clr: #ffffff;
+
+    /* font vars */
+    $headerFont: "Cormorant Upright", serif;
+    $bodyFont: "Open Sans", sans-serif;
+    $fancyFont: "Bestermind";
+
+
+// Fonts
+
+@font-face {
+    font-family: "Cormorant Upright", serif;
+    src: url(/src/assets/fonts/CormorantUpright-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Bestermind";
+    src: url(/src/assets/fonts/BestermindRegular.ttf);
+}
+
+// Mixins
+@mixin section-flex ($direction:row, $gap:5rem){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+    gap: $gap;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}

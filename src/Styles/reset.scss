@@ -1,0 +1,41 @@
+@import './Variables/Variables';
+
+*, 
+*::before,
+*::after {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a, p, span {
+    color: $white-clr;
+    font-family: $bodyFont;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+h1, h2, h3, h4 h5, h6{
+    font-family: $headerFont;
+    color: $white-clr;
+    text-transform: capitalize;
+}
+
+section,
+header, 
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
