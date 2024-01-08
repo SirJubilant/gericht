@@ -2,36 +2,62 @@
 @import '../../Styles/reset';
 
 .header {
-    padding: 3rem 4rem;
     background: $primary-clr;
+    @include flex;
+
+    &__logo {
+            text-transform: uppercase;
+            font-family: $headerFont;
+            font-size: 2.8rem;
+            padding: 0 4.6rem;
+        }
 
     &__nav {
+        padding: 2rem 4rem;
         @include flex;
-        justify-content: space-evenly;
+        flex-grow: 1;
         margin-left: auto;
 
-        .logo {
-                text-transform: uppercase;
-                font-family: $headerFont;
-                font-size: 2.8rem;
-            }
-         
-        &-items {   
+        &-items,
+        &-items2
+         {
             @include flex;
-            margin-left: auto;
-          
-         }
-
-         &-items2 {
-            margin-left: auto;
-            @include flex;
-          
-         }
+           margin-left: auto;
+        }
 
          &-item {
-                padding-right: 1.6rem;
-                font-size: 1.6rem;
-         }
+            padding-right: 2.0rem;
+            font-size: 1.6rem;
+
+        }
+
+        &-link:hover {
+                color: $accent-clr;
+            }
+        
+
+       
     }
 
+}
+
+
+
+
+
+// media queries 
+@media (max-width: 768px) {
+
+    .header__nav {
+        position: relative;
+
+        &-items,
+        &-items2 {
+        display: block;
+        top: 100%;
+        right: 0;
+        background: $accent-clr;
     }
+    }
+    
+}

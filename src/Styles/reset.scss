@@ -6,6 +6,7 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
+    transition: all ease 0.2;
 }
 
 html {
@@ -29,7 +30,7 @@ img {
 }
 h1, h2, h3, h4 h5, h6{
     font-family: $headerFont;
-    color: $white-clr;
+    color: $accent-clr;
     text-transform: capitalize;
 }
 
@@ -38,4 +39,13 @@ header,
 footer {
     max-width: 1440px;
     margin: 0 auto;
+}
+// media queries 
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
 }
