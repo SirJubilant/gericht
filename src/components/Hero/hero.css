@@ -32,6 +32,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all ease 0.2;
 }
 
 html {
@@ -66,6 +67,7 @@ header,
 footer {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0px 4.6rem 4.6rem 4.6rem;
 }
 
 @media (max-width: 768px) {

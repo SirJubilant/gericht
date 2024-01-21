@@ -1,0 +1,84 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+.hero-section {
+    background: $primary-clr;
+    @include flex;
+
+    .section-wrapper {
+        flex-basis: 100%;
+        @include flex;
+        gap: 10rem;
+    }
+    
+
+    .hashtags {
+        left: 0;
+        @include section-flex($gap: 2rem);
+        font-size: 1.2rem;
+        rotate: 270deg;
+    }
+
+    .hero__text {
+       flex: 1 1 42rem;
+       
+
+        &-header {
+            font-size: 1.8rem;
+            padding-bottom: 0.2rem;
+            color: $white-clr;
+        }
+
+        &-bigHeader {
+            font-size: 5rem;
+            line-height: 1.4;
+            padding: 1.2rem 0;
+            max-width: 32rem;
+        }
+
+        &-content {
+            font-size: 1.6rem;
+            padding: 1.2rem 0;
+            margin-bottom: 2rem;
+             line-height: 1.2;
+            color: $tetiary-clr; 
+            max-width: 32rem;
+        }
+    }
+
+    .img-container{
+       flex: 1 1 42rem;
+        position: relative;
+        z-index: 1;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            right: 29%;
+            bottom: 55%;
+            background: $accent-clr;
+            z-index: -1;
+
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 55%;
+            background: $accent-clr;
+            z-index: -1;
+        }
+      
+
+        img {
+             width: 28vw;
+             height: 28vw;
+             z-index: 1;
+        }
+        
+    }
+}

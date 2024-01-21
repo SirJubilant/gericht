@@ -4,6 +4,8 @@
 .header {
     background: $primary-clr;
     @include flex;
+    justify-content: space-between;
+    
 
     &__logo {
             text-transform: uppercase;
@@ -22,21 +24,21 @@
         &-items2
          {
             @include flex;
-           margin-left: auto;
+           margin-left: auto;      
         }
 
          &-item {
             padding-right: 2.0rem;
             font-size: 1.6rem;
+        }
 
+        &-menu{
+            display: none;
         }
 
         &-link:hover {
                 color: $accent-clr;
-            }
-        
-
-       
+            }       
     }
 
 }
@@ -47,17 +49,48 @@
 
 // media queries 
 @media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
 
-    .header__nav {
+
+    .header {
         position: relative;
+        &__nav {
+         position: absolute;
+          top: 100%;
+           right: 100%;
+           visibility: hidden;
+           background: $secondary-clr;
+           border-radius: 4px;
+           display: block;
+
+           &.active {
+            right: 0;
+            visibility: visible;
+           }
 
         &-items,
-        &-items2 {
-        display: block;
-        top: 100%;
-        right: 0;
-        background: $accent-clr;
+        &-items2
+         {
+            display: block;
+        }
+
+        &-items2 .line{
+            display: none;
+        }
+
+         &-item {
+            padding:0 2rem 2rem 0;
+            font-size: 1.9rem;
+
+        }   
+
+        &-menu {
+            margin-right: 16px;
+            display: block;
+            cursor: pointer;
+        }
     }
-    }
-    
+    }   
 }
