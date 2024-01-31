@@ -1,0 +1,55 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+.about__section {
+    background: url('../../assets/bg1.webp');
+    background-size: cover;
+
+    &-wrapper {
+        background: url('../../assets/G\ \(1\).png') no-repeat;
+        background-position: center center;
+        background-size: 24vw;
+        @include flex;
+        justify-content: center;
+        flex-basis: 600px;
+        padding: 40px;
+    }
+
+    &-content {
+        @include flex;
+        max-height: fit-content;
+         padding: 40px;
+        
+        article{
+            padding: 4.4rem;
+              h2 {
+                    font-size: 3.2rem;
+                    padding: 0.4rem 0;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    padding: 0.4rem 0;
+                    margin: 1.6rem 0;
+                    line-height: 1.5;
+                    letter-spacing: 1px;
+                    color: $tetiary-clr;
+                }
+
+                button {
+                    margin: 20px 0;
+                }
+           
+            &:nth-child(1) {
+                 margin-left: auto;
+                text-align: end;
+
+                img {
+                    margin-left: 91%;
+                }
+                
+            }
+        }
+
+    }
+}

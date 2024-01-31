@@ -1,5 +1,5 @@
 import Button from '../Button/Button';
-import { r_spoon, hero_img } from '../assets';
+import { r_spoon, hero_img, up_line } from '../assets';
 import { motion } from 'framer-motion';
 import './showcase.css';
 
@@ -11,7 +11,10 @@ const hashVariants = {
     visible: {
         y: 0,
         opacity: 1,
-        transition: {delay: 0.5, duration: 0.5}
+        transition: {delay: 0.5, 
+            duration: 0.5,
+            type: 'spring'
+        }
     }
 }
 
@@ -56,9 +59,14 @@ export default function Showcase() {
 
         <aside className="img-container">
             <img className="hero-img" src={ hero_img } alt="" />
-
         </aside>
         </div>
+
+        {/* <div className="side_pieces">
+            <p>01 -- 02 03 04</p>
+            <p><img src={ up_line } alt="" />
+            scroll</p>
+            </div> */}
     </section>
   )
 }

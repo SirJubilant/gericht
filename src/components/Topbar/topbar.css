@@ -56,7 +56,7 @@ img {
      object-fit: contain;
 }
 
-h1, h2, h3, h4 h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Cormorant Upright", serif;
   color: #DCCA87;
   text-transform: capitalize;
@@ -125,6 +125,7 @@ footer {
     background: #040404;
     border-radius: 4px;
     display: block;
+    z-index: 10;
   }
   .header__nav.active {
     right: 0;

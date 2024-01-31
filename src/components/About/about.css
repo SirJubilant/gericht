@@ -75,76 +75,49 @@ footer {
     font-size: 55%;
   }
 }
-.hero-section {
-  background: #0c0b08;
-  display: flex;
-  align-items: center;
+.about__section {
+  background: url("../../assets/bg1.webp");
+  background-size: cover;
 }
-.hero-section .section-wrapper {
-  flex-basis: 100%;
+.about__section-wrapper {
+  background: url("../../assets/G (1).png") no-repeat;
+  background-position: center center;
+  background-size: 24vw;
   display: flex;
-  align-items: center;
-  gap: 10rem;
-  padding: 4rem;
-}
-.hero-section .hashtags {
-  left: 0;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  flex-basis: 600px;
+  padding: 40px;
+}
+.about__section-content {
+  display: flex;
+  align-items: center;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 40px;
+}
+.about__section-content article {
+  padding: 4.4rem;
+}
+.about__section-content article h2 {
+  font-size: 3.2rem;
+  padding: 0.4rem 0;
+}
+.about__section-content article p {
   font-size: 1.2rem;
-  rotate: 270deg;
-}
-.hero-section .hero__text {
-  flex: 1 1 42rem;
-}
-.hero-section .hero__text-header {
-  font-size: 1.8rem;
-  padding-bottom: 0.2rem;
-  color: #ffffff;
-}
-.hero-section .hero__text-bigHeader {
-  font-size: 5rem;
-  line-height: 1.4;
-  padding: 1.2rem 0;
-  max-width: 32rem;
-}
-.hero-section .hero__text-content {
-  font-size: 1.6rem;
-  padding: 1.2rem 0;
-  margin-bottom: 2rem;
-  line-height: 1.2;
+  padding: 0.4rem 0;
+  margin: 1.6rem 0;
+  line-height: 1.5;
+  letter-spacing: 1px;
   color: #AAAAAA;
-  max-width: 32rem;
 }
-.hero-section .img-container {
-  flex: 1 1 42rem;
-  position: relative;
-  z-index: 1;
+.about__section-content article button {
+  margin: 20px 0;
 }
-.hero-section .img-container::before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  right: 29%;
-  bottom: 55%;
-  background: #DCCA87;
-  z-index: -1;
+.about__section-content article:nth-child(1) {
+  margin-left: auto;
+  text-align: end;
 }
-.hero-section .img-container::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  top: 55%;
-  background: #DCCA87;
-  z-index: -1;
-}
-.hero-section .img-container img {
-  width: 28vw;
-  height: 28vw;
-  z-index: 1;
-}/*# sourceMappingURL=showcase.css.map */
+.about__section-content article:nth-child(1) img {
+  margin-left: 91%;
+}/*# sourceMappingURL=about.css.map */

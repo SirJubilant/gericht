@@ -9,6 +9,7 @@
         flex-basis: 100%;
         @include flex;
         gap: 10rem;
+        padding: 4rem;
     }
     
 
@@ -81,4 +82,12 @@
         }
         
     }
+    // .side_pieces {
+    //     span::nth-child(1),
+    //     span::nth-child(2){
+    //         position: absolute;
+    //         top: 100%;
+    //         font-size: 100px;
+    //     }
+    // }
 }

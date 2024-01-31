@@ -64,6 +64,7 @@
            background: $secondary-clr;
            border-radius: 4px;
            display: block;
+           z-index: 10;
 
            &.active {
             right: 0;
