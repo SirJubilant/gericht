@@ -32,8 +32,7 @@
 @mixin section-flex ($direction:row, $gap:5rem){
     display: flex;
     flex-direction: $direction;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
     gap: $gap;
 }
 

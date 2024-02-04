@@ -6,10 +6,12 @@
     justify-content:center;
     margin: 0 auto;
     background: $secondary-clr;
+    background-size: cover;
     max-height: fit-content;
 
     .menu__section {
-        padding: 8rem;
+        margin: 4rem;
+        @include section-flex ($direction:column, $gap:0rem);
         
 
         &-header {
@@ -30,19 +32,41 @@
             }
 
             h3 {
-                padding: 0.8rem 0;
+                padding: 0.4rem 0;
                 font-size: 3.2rem;
                 text-align: center;
             }
         }
 
+        &-img {
+            img {
+               height: 450px;
+            }
+        }
+
         &-main {
             @include section-flex;
+            margin: 2.4rem;
 
             aside {
 
                 li {
                     padding: 1rem 0;
+
+
+                    .item{
+                    display: grid;
+                    grid-template-columns: 2fr 1fr 1fr;
+                    gap: 1rem;
+                   align-items: center;
+                    
+                
+
+                    .line {
+                        width: 55px;
+                    }
+                }
+
                 }
 
                 h2 {
@@ -62,25 +86,14 @@
                     font-size: 1.6rem;
 
                     span {
-                        font-size: 1.6rem;
+                        font-size: 2rem;
                         font-family: $headerFont;
-                    }
-
-                    .line {
-                        // position: absolute;
-                         max-width: 5px;
-                         padding: 0 4px;
-                    }
-
-                    .line::after {
-                        position: relative;
-                        content: url('/src/assets/h-line.png');
-                        left: 0;
-                       
-                     
+                        font-weight: 400;
                     }
                 }
             }
+
+
         }
     }
 }

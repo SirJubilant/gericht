@@ -1,4 +1,4 @@
-import {r_spoon, flask } from '../assets'
+import {r_spoon, flask, h_line } from '../assets'
 import Button from '../Button/Button';
 import './menu.css';
 
@@ -18,53 +18,94 @@ export default function Menu() {
             <h2>wine & beer</h2>
             <ul>
             <li>
-              <h3>chapel hill shiraz <span className='line'>56</span><span>$56</span></h3>
+              <div className='item'>
+              <h3>chapel hill shiraz</h3> 
+                <span className='line'> <img src={ h_line } alt="" /></span>
+                <span>$56</span>
+              </div>
+                
               <h6>AU | Bottle</h6>
             </li>
             <li>
-              <h3>catena malbec <span className='line'></span><span>$59</span></h3>
+              <div className="item">
+              <h3>catena malbec</h3>
+                <span className='line'><img src={ h_line } /></span>
+                <span>$59</span>
+              </div>
               <h6>AR | Bottle</h6>
             </li>
             <li>
-              <h3>la  vielle rose<span className='line'></span><span>$44</span></h3>
+              <div className="item"> 
+              <h3>la  vielle rose</h3>
+                <span className='line'> <img src={ h_line } /></span>
+                <span>$44</span>
+              </div>
               <h6>Fr | 750 ml</h6>
             </li>
             <li>
-              <h3>rhino pale ale <span className='line'></span><span>$31</span></h3>
+              <div className="item">
+              <h3>rhino pale ale</h3> 
+              <span className='line'> <img src={ h_line } /></span>
+              <span>$31</span>
+              </div>
               <h6>CA | 750ml</h6>
             </li>
             <li>
-              <h3>irish guiness <span className='line'></span><span>$26</span></h3>
+              <div className="item">
+              <h3>irish guiness</h3>
+              <span className='line'> <img src={ h_line } /></span>
+              <span>$26</span>
+              </div>
               <h6>IE | 750 ml</h6>
             </li>
             </ul>
           </aside>
           
-          <div className="menu__section-img">
+          <span className="menu__section-img">
             <img src={ flask } alt="" />
-          </div>
+          </span>
 
           <aside className='menu__section-cocktail'>
             <h2>cocktails</h2>
             <ul>
             <li>
-              <h3>aperol spritz <span className='line'></span><span>$20</span></h3>
+              <div className="item">
+              <h3>aperol spritz</h3>
+              <span className='line'> <img src={ h_line } /></span>
+              <span>$20</span>
+              </div>
               <h6>aperol | villa marchesi prosecco | soda | 30 ml</h6>
             </li>
             <li>
-              <h3>dark 'n' stormy <span className='line'></span><span>$16</span></h3>
+              <div className="item">
+              <h3>dark 'n' stormy</h3>
+              <span className='line'> <img src={ h_line } /></span>
+              <span>$16</span>
+              </div>
               <h6>dark rum | ginger beer | slice of lime</h6>
             </li>
             <li>
-              <h3>daiquiri<span className='line'></span><span>$10</span></h3>
+              <div className="item">
+              <h3>daiquiri</h3>
+              <span className='line'> <img src={ h_line } /></span>
+              <span>$10</span>
+              </div>
               <h6>rum | citrus juice | sugar</h6>
             </li>
             <li>
-              <h3>old fashioned<span className='line'></span><span>$31</span></h3>
+              <div className="item">
+              <h3>old fashioned</h3>
+                <span className='line'> <img src={ h_line } /></span>
+                <span>$31</span>
+              </div>
               <h6>bourbon | brown sugar | angostura bitters</h6>
             </li>
             <li>
-              <h3>negroni <span className='line'></span><span>$26</span></h3>
+              <div className="item">
+              <h3>negroni </h3>
+              <span className='line'> <img src={ h_line } /></span>
+              <span>$26</span>
+              </div>
               <h6>gin | sweet vermouth | campari | orange garnish</h6>
             </li>
             </ul>

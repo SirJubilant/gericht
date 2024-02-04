@@ -120,4 +120,5 @@ footer {
 }
 .about__section-content article:nth-child(1) img {
   margin-left: 91%;
+  rotate: 180deg;
 }/*# sourceMappingURL=about.css.map */

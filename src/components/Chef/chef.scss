@@ -1,0 +1,99 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+.chef-section {
+    @include section-flex($gap: 2rem);
+    background: url('../../assets/bg1.webp');
+    background-size: cover;
+    padding: 12rem 24rem;
+
+
+    .section-wrapper {
+        flex: 1 1 42rem;
+    }
+
+ 
+
+    .img-container{
+       flex: 1 1 42rem;
+        position: relative;
+        z-index: 1;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            right: 17%;
+            bottom: 52%;
+            background: $accent-clr;
+            z-index: -1;
+
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            left: 7%;
+            top: 52%;
+            background: $accent-clr;
+            z-index: -1;
+        }
+      
+
+        img {
+             width: 28vw;
+             height: 28vw;
+             z-index: 1;
+        }   
+    }
+
+    // chef text content
+
+
+       .chef__profile {
+       flex: 1 1 42rem;
+       
+
+        &-header {
+            font-size: 1.8rem;
+            padding: 0.4rem 0;
+            color: $white-clr;
+        }
+
+        &-bigHeader {
+            font-size: 4.4rem;
+            line-height: 1.4;
+            padding: 1.2rem 0;
+        }
+
+        &-message {
+            font-size: 1.4rem;
+            padding: 0.8rem 0;
+            margin-bottom: 2rem;
+             line-height: 1.4;
+            color: $tetiary-clr; 
+        }
+
+        &-info {
+            h4 {
+                padding: 0.4rem 0;
+                font-size: 2rem;
+            }
+            span {
+                color: $tetiary-clr;
+                text-transform: capitalize;
+                font-size: 1.1rem;
+            }
+        }
+
+        &-sig {
+            font-family: $fancyFont;
+            text-transform: capitalize;
+            padding: 3.2rem 0;
+            font-size: 3.6rem;
+        }
+    }
+}

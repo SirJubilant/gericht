@@ -81,11 +81,16 @@ footer {
   justify-content: center;
   margin: 0 auto;
   background: #040404;
+  background-size: cover;
   max-height: -moz-fit-content;
   max-height: fit-content;
 }
 .menu .menu__section {
-  padding: 8rem;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 0rem;
 }
 .menu .menu__section-header {
   display: grid;
@@ -103,19 +108,31 @@ footer {
   margin: 0 auto;
 }
 .menu .menu__section-header h3 {
-  padding: 0.8rem 0;
+  padding: 0.4rem 0;
   font-size: 3.2rem;
   text-align: center;
+}
+.menu .menu__section-img img {
+  height: 450px;
 }
 .menu .menu__section-main {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   gap: 5rem;
+  margin: 2.4rem;
 }
 .menu .menu__section-main aside li {
   padding: 1rem 0;
+}
+.menu .menu__section-main aside li .item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.menu .menu__section-main aside li .item .line {
+  width: 55px;
 }
 .menu .menu__section-main aside h2 {
   font-size: 2.4rem;
@@ -132,15 +149,7 @@ footer {
   font-size: 1.6rem;
 }
 .menu .menu__section-main aside h3 span {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: "Cormorant Upright", serif;
-}
-.menu .menu__section-main aside h3 .line {
-  max-width: 5px;
-  padding: 0 4px;
-}
-.menu .menu__section-main aside h3 .line::after {
-  position: relative;
-  content: url("/src/assets/h-line.png");
-  left: 0;
+  font-weight: 400;
 }/*# sourceMappingURL=menu.css.map */

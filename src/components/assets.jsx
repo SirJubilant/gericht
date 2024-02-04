@@ -6,6 +6,7 @@ import up_line from "../assets/Line.png";
 import knife from "../assets/knife.webp";
 import flask from "../assets/flask.webp";
 import h_line from "../assets/h-line.png";
+import chef from "../assets/chef.webp";
 
 export {
     vert_line,
@@ -15,5 +16,6 @@ export {
     up_line,
     knife,
     flask,
-    h_line
+    h_line,
+    chef
 }
