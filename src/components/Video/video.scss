@@ -1,0 +1,16 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+.section__wrapper {
+    display: grid;
+    place-items: center;
+    padding: 0;
+
+    &-img {
+         grid-area: 1 / -1;
+    }
+
+ &-play {
+ grid-area: 1 / -1;
+ }
+}

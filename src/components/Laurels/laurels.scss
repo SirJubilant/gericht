@@ -1,0 +1,81 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+.section {
+    background: url('../../assets/bg1.webp');
+    background-size: cover;
+
+    @include flex;
+    gap: 4rem;
+    align-items: unset;
+    justify-content: center;
+    padding: 50px;
+
+    .logo {
+        width: 100px;
+    }
+
+
+    &__content {
+        margin: auto 0;
+        h4 {
+            color: white;
+            font-size: 1.6rem;
+            padding-bottom: 0.4rem;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+            padding: 1.2rem 0 2.4rem 0;
+        }
+
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.8rem;
+
+            li {
+                @include flex;
+                gap: 1.2rem;
+
+                img {
+                    width: 4.8rem;
+                }
+
+                .laurel {
+                     flex-basis: 12rem;
+                    h5 {
+                        font-size: 1.6rem;
+                        padding-bottom: 0.4rem;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        color: $tetiary-clr;
+                        line-height: 1.4;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    &__img {
+        flex-basis: 36rem;
+        display: grid;
+        align-items: flex-end;
+        // justify-content: flex-start;
+
+       .chicken {
+        grid-area: 1 / -1;
+       }
+
+       .g {
+        grid-area: 1 / -1;
+        max-width: 32rem;
+        transform: translateX(-3.6rem);
+       }
+
+
+    }
+}

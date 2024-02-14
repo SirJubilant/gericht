@@ -1,0 +1,62 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+.gallery {
+    background: url("../../assets/bg2.webp");
+    background-size: cover;
+    @include section-flex;
+
+    &__info {
+        h4 {
+            color: $white-clr;
+            font-size: 1.6rem;
+            padding: 0.4rem 0;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+            padding: 0.8rem 0;
+        }
+
+        p {
+            line-height: 1.4;
+            font-size: 1.3rem;
+            color: $tetiary-clr;
+            padding: 0.4rem 0 1.2rem 0;
+        }
+    }
+
+
+
+    &__images {
+        @include section-flex($gap:1.6rem);
+        padding-top: 2rem;
+       
+
+        img {
+            position: relative;
+            max-width: 20rem;
+            max-height: 28rem;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 50%;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                z-index: 1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                background: rgba($color: #000000, $alpha: 0.5);
+            }
+
+        }
+    }
+}

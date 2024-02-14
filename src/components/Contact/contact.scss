@@ -1,18 +1,16 @@
 @import "../../Styles/Variables/Variables";
 @import "../../Styles/reset";
 
-.chef-section {
-    @include section-flex($gap: 2rem);
+.contact__section {
+    @include section-flex;
     background: url('../../assets/bg1.webp');
     background-size: cover;
-    padding: 12rem 24rem;
+    padding: 12rem 18rem;
 
 
     .section-wrapper {
         flex: 1 1 42rem;
     }
-
- 
 
     .img-container{
        flex: 1 1 42rem;
@@ -24,8 +22,8 @@
             position: absolute;
             width: 50%;
             height: 50%;
-            right: 17%;
-            bottom: 52%;
+            right: 11%;
+            bottom: 53%;
             background: $accent-clr;
             z-index: -1;
 
@@ -36,8 +34,8 @@
             position: absolute;
             width: 50%;
             height: 50%;
-            left: 7%;
-            top: 52%;
+            left: 1%;
+            top: 53%;
             background: $accent-clr;
             z-index: -1;
         }
@@ -45,7 +43,6 @@
 
         img {
              width: 28vw;
-             height: 28vw;
              z-index: 1;
         }   
     }
@@ -53,7 +50,7 @@
     // chef text content
 
 
-       .chef__profile {
+       .contact__info {
        flex: 1 1 42rem;
        
 
@@ -69,42 +66,27 @@
             padding: 1.2rem 0;
         }
 
-        &-message {
+        &-address {
             font-size: 1.4rem;
+            text-transform: capitalize;
             padding: 0.8rem 0;
             margin-bottom: 2rem;
              line-height: 1.4;
             color: $tetiary-clr; 
             position: relative;
             max-height: 100px;
-
-            .quote {
-                img {
-                    padding: 0.2rem;
-                    display: inline-block;
-                    height: 2.4rem;
-                    width: 2.4rem;
-                }
-            }
         }
 
-        &-info {
+        &-time {
+            padding-bottom: 3.6rem;
             h4 {
                 padding: 0.4rem 0;
                 font-size: 2rem;
             }
-            span {
-                color: $tetiary-clr;
-                text-transform: capitalize;
-                font-size: 1.1rem;
+            p {
+                font-size: 1.2rem;
+                line-height: 2.4;
             }
-        }
-
-        &-sig {
-            font-family: $fancyFont;
-            text-transform: capitalize;
-            padding: 3.2rem 0;
-            font-size: 3.6rem;
         }
     }
 }

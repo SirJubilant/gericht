@@ -1,5 +1,4 @@
-import Button from '../Button/Button';
-import { chef, r_spoon } from '../assets';
+import { chef, r_spoon, quote } from '../assets';
 import { motion } from 'framer-motion';
 import './chef.css';
 
@@ -44,7 +43,7 @@ export default function Chef() {
             </h3>
 
             <p className="chef__profile-message">
-                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iusto omnis, labore nihil mollitia tempore vitae temporibus sapiente ducimus blanditiis similique quis necessitatibus quas.
+                <span className='quote'> <img src={ quote } alt="" /></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iusto omnis, labore nihil mollitia tempore vitae temporibus sapiente ducimus blanditiis similique quis necessitatibus quas.
             </p>
 
             <div className="chef__profile-info">
