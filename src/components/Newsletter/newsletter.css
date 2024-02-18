@@ -1,0 +1,139 @@
+/* color vars */
+/* font vars */
+@font-face {
+  font-family: "Cormorant Upright", serif;
+  src: url(/src/assets/fonts/CormorantUpright-Medium.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Bestermind";
+  src: url(/src/assets/fonts/BestermindRegular.ttf);
+}
+/* color vars */
+/* font vars */
+@font-face {
+  font-family: "Cormorant Upright", serif;
+  src: url(/src/assets/fonts/CormorantUpright-Medium.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Bestermind";
+  src: url(/src/assets/fonts/BestermindRegular.ttf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a, p, span {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cormorant Upright", serif;
+  color: #DCCA87;
+  text-transform: capitalize;
+}
+
+section,
+header,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 4.6rem 4.6rem 4.6rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+.newsletter {
+  background: #0c0b08;
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+.newsletter__container {
+  margin: 0 auto;
+  text-align: center;
+  background: #040404;
+  padding: 2rem 4rem;
+  position: absolute;
+  transform: translateX(50%);
+}
+.newsletter__container h3 {
+  color: #ffffff;
+  padding-top: 2rem;
+}
+.newsletter__container img {
+  margin: 0 auto;
+  padding-top: 0.7rem;
+  width: 2rem;
+}
+.newsletter__container h2 {
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+.newsletter__container p {
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #AAAAAA;
+}
+.newsletter__container form {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+.newsletter__container form input[type=email] {
+  padding: 0.8rem 20rem 0.8rem 0.8rem;
+  margin-right: 1.2rem;
+  background: inherit;
+}
+.newsletter__container form input[type=email]::-moz-placeholder {
+  font-family: "Cormorant Upright", serif;
+}
+.newsletter__container form input[type=email]::placeholder {
+  font-family: "Cormorant Upright", serif;
+}
+.newsletter__container form input[type=submit] {
+  background: #DCCA87;
+  color: #0c0b08;
+  display: inline-block;
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-family: "Cormorant Upright", serif;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+}/*# sourceMappingURL=newsletter.css.map */

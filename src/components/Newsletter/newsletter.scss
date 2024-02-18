@@ -1,0 +1,71 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+
+.newsletter {
+    background: $primary-clr;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+
+    &__container {
+        margin: 0 auto;
+        text-align: center;
+        background: $secondary-clr;
+        padding: 2rem 4rem;
+          position: absolute;
+          transform: translateX(50%);
+        
+
+        h3 {
+            color: $white-clr;
+            padding-top: 2rem;
+        }
+
+        img {
+            margin: 0 auto;
+            padding-top: 0.7rem;
+            width: 2rem;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+            padding: 1rem;
+        }
+
+        p {
+            padding: 0.8rem;
+            font-size: 1rem;
+            color: $tetiary-clr;
+        }
+
+        form {
+            @include flex;
+            padding: 3rem;
+            input[type=email] {
+                padding: 0.8rem 20rem 0.8rem 0.8rem;
+                margin-right: 1.2rem;
+                background: inherit;
+
+                &::placeholder {
+                    font-family: $headerFont;
+                }
+            }
+
+            input[type=submit] {
+                background: $accent-clr;
+                color: $primary-clr;
+                display: inline-block;
+                border-radius: 2px;
+                text-transform: capitalize;
+                font-family: $headerFont;
+                padding: 0.5rem 1.2rem;
+                cursor: pointer;
+                font-size: 1.8rem;
+                font-weight: 700;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}

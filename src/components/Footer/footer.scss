@@ -1,0 +1,93 @@
+@import "../../Styles/Variables/Variables";
+@import "../../Styles/reset";
+
+.footer {
+        background-image: url('../../assets/bg1.webp');
+        background-size: cover;
+        padding: 30rem 18rem 10rem 18rem;
+
+    &__container {
+        color: white;
+        text-align: center;
+        z-index: -10000;
+        @include section-flex($gap: 6rem);
+        place-content: center;
+    
+        h3 {
+            color: $white-clr;
+            font-size: 2rem;
+            padding: 1.2rem;
+            font-weight: normal;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 3.2rem;
+            padding: 1.2rem;
+            span{
+                font-family: $headerFont;
+                color: $accent-clr;
+                
+            }
+        }
+
+        p {
+            color: $tetiary-clr;
+        }
+
+
+        .contact {
+            p {
+                font-size: 1.2rem;
+            }
+
+            .cell {
+                padding: 1rem;
+
+                p {
+                    padding: 0.5rem;
+                }
+            }
+        }
+
+        .info {
+            p{
+                padding: 1rem;
+                font-size: 1.2rem;
+                color: $white-clr;
+            }
+            img {
+                margin: 0 auto;
+            }
+
+            .socials {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem auto;
+                max-width: 5rem;
+                gap: 1rem;
+                cursor: pointer;
+            }
+
+               .rights {
+                    color: $tetiary-clr;
+                    padding-top: 4rem;
+                }
+        }
+
+        .working-hrs {
+            div {
+                padding: 0.5rem;
+
+                p {
+                    font-size: 1.2rem;
+                    padding: 0.4rem;
+                }
+            }
+        }
+
+    }
+
+ 
+}

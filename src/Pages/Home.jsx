@@ -8,6 +8,8 @@ import Video from "../components/Video/Video";
 import Laurels from "../components/Laurels/Laurels";
 import Gallery from "../components/Gallery/Gallery";
 import Contact from "../components/Contact/Contact";
+import Newsletter from "../components/Newsletter/Newsletter";
+import Footer from "../components/Footer/Footer";
 
 
 
@@ -23,6 +25,8 @@ export default function Home() {
       <Laurels />
       <Gallery />
       <Contact />
+      <Newsletter />
+      <Footer />
     </>
   );
 }

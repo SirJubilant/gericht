@@ -24,7 +24,7 @@ export default function Topbar() {
     <>
         <header className="header">
             
-            <a href="#" className="header__logo">gericht</a>
+            <a href="#" className="header__logo">ger<span>&Iacute;</span>cht</a>
 
             <nav className={`header__nav ${showNav && 'active'}`}>
                 

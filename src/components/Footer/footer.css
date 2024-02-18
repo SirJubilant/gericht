@@ -1,0 +1,147 @@
+/* color vars */
+/* font vars */
+@font-face {
+  font-family: "Cormorant Upright", serif;
+  src: url(/src/assets/fonts/CormorantUpright-Medium.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Bestermind";
+  src: url(/src/assets/fonts/BestermindRegular.ttf);
+}
+/* color vars */
+/* font vars */
+@font-face {
+  font-family: "Cormorant Upright", serif;
+  src: url(/src/assets/fonts/CormorantUpright-Medium.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Bestermind";
+  src: url(/src/assets/fonts/BestermindRegular.ttf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a, p, span {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cormorant Upright", serif;
+  color: #DCCA87;
+  text-transform: capitalize;
+}
+
+section,
+header,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 4.6rem 4.6rem 4.6rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+.footer {
+  background-image: url("../../assets/bg1.webp");
+  background-size: cover;
+  padding: 30rem 18rem 10rem 18rem;
+}
+.footer__container {
+  color: white;
+  text-align: center;
+  z-index: -10000;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  gap: 6rem;
+  place-content: center;
+}
+.footer__container h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1.2rem;
+  font-weight: normal;
+}
+.footer__container h2 {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  padding: 1.2rem;
+}
+.footer__container h2 span {
+  font-family: "Cormorant Upright", serif;
+  color: #DCCA87;
+}
+.footer__container p {
+  color: #AAAAAA;
+}
+.footer__container .contact p {
+  font-size: 1.2rem;
+}
+.footer__container .contact .cell {
+  padding: 1rem;
+}
+.footer__container .contact .cell p {
+  padding: 0.5rem;
+}
+.footer__container .info p {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.footer__container .info img {
+  margin: 0 auto;
+}
+.footer__container .info .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 5rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+.footer__container .info .rights {
+  color: #AAAAAA;
+  padding-top: 4rem;
+}
+.footer__container .working-hrs div {
+  padding: 0.5rem;
+}
+.footer__container .working-hrs div p {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}/*# sourceMappingURL=footer.css.map */

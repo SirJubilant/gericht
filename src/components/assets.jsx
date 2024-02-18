@@ -21,6 +21,9 @@ import gal3 from "../assets/gal3.webp";
 import gal4 from "../assets/gal4.webp";
 import gal1 from "../assets/output.webp";
 import cocktail from "../assets/cocktail.webp";
+import facebook from "../assets/u_facebook-f.svg";
+import twitter from "../assets/u_twitter-alt.svg";
+import instagram from "../assets/u_instagram.svg";
 
 export {
     vert_line,
@@ -45,5 +48,8 @@ export {
     gal2,
     gal3,
     gal4,
-    cocktail
+    cocktail,
+    facebook,
+    twitter,
+    instagram
 }
