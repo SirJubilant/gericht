@@ -24,11 +24,13 @@ import cocktail from "../assets/cocktail.webp";
 import facebook from "../assets/u_facebook-f.svg";
 import twitter from "../assets/u_twitter-alt.svg";
 import instagram from "../assets/u_instagram.svg";
+import h_line2 from "../assets/Line2.png"
 
 export {
     vert_line,
     hero_img,
     r_spoon,
+    h_line2,
     y_line,
     up_line,
     knife,

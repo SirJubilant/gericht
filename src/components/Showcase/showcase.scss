@@ -25,20 +25,20 @@
        
 
         &-header {
-            font-size: 1.8rem;
+          
             padding-bottom: 0.2rem;
             color: $white-clr;
         }
 
         &-bigHeader {
-            font-size: 5rem;
+            
             line-height: 1.4;
             padding: 1.2rem 0;
             max-width: 32rem;
         }
 
         &-content {
-            font-size: 1.6rem;
+           
             padding: 1.2rem 0;
             margin-bottom: 2rem;
              line-height: 1.2;
@@ -57,8 +57,8 @@
             position: absolute;
             width: 50%;
             height: 50%;
-            right: 29%;
-            bottom: 55%;
+            right: 23.5%;
+            bottom: 53%;
             background: $accent-clr;
             z-index: -1;
 
@@ -69,7 +69,8 @@
             position: absolute;
             width: 50%;
             height: 50%;
-            top: 55%;
+            top: 50%;
+            left: 1%;
             background: $accent-clr;
             z-index: -1;
         }
@@ -82,12 +83,14 @@
         }
         
     }
-    // .side_pieces {
-    //     span::nth-child(1),
-    //     span::nth-child(2){
-    //         position: absolute;
-    //         top: 100%;
-    //         font-size: 100px;
-    //     }
-    // }
+    .scroll {
+            @include flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            column-gap: 10px;
+           top: 88%;
+           right:10%;
+    }
 }

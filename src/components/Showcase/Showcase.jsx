@@ -1,5 +1,5 @@
 import Button from '../Button/Button';
-import { r_spoon, hero_img, up_line } from '../assets';
+import { hero_img, y_line, h_line2 } from '../assets';
 import { motion } from 'framer-motion';
 import './showcase.css';
 
@@ -59,14 +59,14 @@ export default function Showcase() {
 
         <aside className="img-container">
             <img className="hero-img" src={ hero_img } alt="" />
+            <p>01 - 02 03 04</p>
         </aside>
         </div>
 
-        {/* <div className="side_pieces">
-            <p>01 -- 02 03 04</p>
-            <p><img src={ up_line } alt="" />
-            scroll</p>
-            </div> */}
+        <div className="scroll">
+            <img src={ y_line } height="30px" width="10px" />
+            <a href='#'>scroll</a>
+            </div>
     </section>
   )
 }

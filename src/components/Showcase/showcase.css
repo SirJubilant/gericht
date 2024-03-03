@@ -56,6 +56,18 @@ img {
      object-fit: contain;
 }
 
+h2 {
+  font-size: clamp(0.8rem, 5vw, 1.8rem);
+}
+
+h1 {
+  font-size: clamp(1rem, 5vw, 5rem);
+}
+
+p {
+  font-size: clamp(0.5rem, 3vw, 1.6rem);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cormorant Upright", serif;
   color: #DCCA87;
@@ -100,18 +112,15 @@ footer {
   flex: 1 1 42rem;
 }
 .hero-section .hero__text-header {
-  font-size: 1.8rem;
   padding-bottom: 0.2rem;
   color: #ffffff;
 }
 .hero-section .hero__text-bigHeader {
-  font-size: 5rem;
   line-height: 1.4;
   padding: 1.2rem 0;
   max-width: 32rem;
 }
 .hero-section .hero__text-content {
-  font-size: 1.6rem;
   padding: 1.2rem 0;
   margin-bottom: 2rem;
   line-height: 1.2;
@@ -128,8 +137,8 @@ footer {
   position: absolute;
   width: 50%;
   height: 50%;
-  right: 29%;
-  bottom: 55%;
+  right: 23.5%;
+  bottom: 53%;
   background: #DCCA87;
   z-index: -1;
 }
@@ -138,7 +147,8 @@ footer {
   position: absolute;
   width: 50%;
   height: 50%;
-  top: 55%;
+  top: 50%;
+  left: 1%;
   background: #DCCA87;
   z-index: -1;
 }
@@ -146,4 +156,16 @@ footer {
   width: 28vw;
   height: 28vw;
   z-index: 1;
+}
+.hero-section .scroll {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  top: 88%;
+  right: 10%;
 }/*# sourceMappingURL=showcase.css.map */

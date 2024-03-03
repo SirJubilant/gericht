@@ -28,6 +28,18 @@ img {
     max-width: 100%;
     object-fit: contain;
 }
+
+h2 {
+     font-size: clamp(0.8rem, 5vw, 1.8rem);
+}
+
+h1 {
+    font-size: clamp(1rem, 5vw, 5rem);
+}
+
+p{
+     font-size: clamp(0.5rem, 3vw, 1.6rem);
+}
 h1, h2, h3, h4, h5, h6{
     font-family: $headerFont;
     color: $accent-clr;
