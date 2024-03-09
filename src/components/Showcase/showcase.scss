@@ -5,23 +5,21 @@
     background: $primary-clr;
     @include flex;
 
-    .section-wrapper {
-        flex-basis: 100%;
-        @include flex;
-        gap: 10rem;
-        padding: 4rem;
-    }
-    
-
-    .hashtags {
+      .hashtags {
         left: 0;
         @include section-flex($gap: 2rem);
         font-size: 1.2rem;
         rotate: 270deg;
     }
 
-    .hero__text {
-       flex: 1 1 42rem;
+    .section-wrapper {
+        flex-basis: 100%;
+        @include flex;
+        gap: 10rem;
+        padding: 4rem;
+        
+        .hero__text {
+            flex: 1 1 42rem;
        
 
         &-header {
@@ -69,7 +67,7 @@
             position: absolute;
             width: 50%;
             height: 50%;
-            top: 50%;
+            top: 53%;
             left: 1%;
             background: $accent-clr;
             z-index: -1;
@@ -81,8 +79,15 @@
              height: 28vw;
              z-index: 1;
         }
-        
+
+          span {
+            position: absolute;
+                bottom: -13%;
+                left: -5%;
+            }
     }
+    }
+    
     .scroll {
             @include flex;
             align-items: center;
@@ -94,3 +99,11 @@
            right:10%;
     }
 }
+
+// @media (max-width: 778px) {
+
+//     .section-wrapper{
+//         flex-direction: column-reverse;
+//     }
+    
+// }

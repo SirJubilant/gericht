@@ -57,11 +57,11 @@ img {
 }
 
 h2 {
-  font-size: clamp(0.8rem, 5vw, 1.8rem);
+  font-size: clamp(0.8rem, 7vw, 1.8rem);
 }
 
 h1 {
-  font-size: clamp(1rem, 5vw, 5rem);
+  font-size: clamp(1rem, 7vw, 5rem);
 }
 
 p {
@@ -92,13 +92,6 @@ footer {
   display: flex;
   align-items: center;
 }
-.hero-section .section-wrapper {
-  flex-basis: 100%;
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-  padding: 4rem;
-}
 .hero-section .hashtags {
   left: 0;
   display: flex;
@@ -108,31 +101,38 @@ footer {
   font-size: 1.2rem;
   rotate: 270deg;
 }
-.hero-section .hero__text {
+.hero-section .section-wrapper {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 4rem;
+}
+.hero-section .section-wrapper .hero__text {
   flex: 1 1 42rem;
 }
-.hero-section .hero__text-header {
+.hero-section .section-wrapper .hero__text-header {
   padding-bottom: 0.2rem;
   color: #ffffff;
 }
-.hero-section .hero__text-bigHeader {
+.hero-section .section-wrapper .hero__text-bigHeader {
   line-height: 1.4;
   padding: 1.2rem 0;
   max-width: 32rem;
 }
-.hero-section .hero__text-content {
+.hero-section .section-wrapper .hero__text-content {
   padding: 1.2rem 0;
   margin-bottom: 2rem;
   line-height: 1.2;
   color: #AAAAAA;
   max-width: 32rem;
 }
-.hero-section .img-container {
+.hero-section .section-wrapper .img-container {
   flex: 1 1 42rem;
   position: relative;
   z-index: 1;
 }
-.hero-section .img-container::before {
+.hero-section .section-wrapper .img-container::before {
   content: "";
   position: absolute;
   width: 50%;
@@ -142,20 +142,25 @@ footer {
   background: #DCCA87;
   z-index: -1;
 }
-.hero-section .img-container::after {
+.hero-section .section-wrapper .img-container::after {
   content: "";
   position: absolute;
   width: 50%;
   height: 50%;
-  top: 50%;
+  top: 53%;
   left: 1%;
   background: #DCCA87;
   z-index: -1;
 }
-.hero-section .img-container img {
+.hero-section .section-wrapper .img-container img {
   width: 28vw;
   height: 28vw;
   z-index: 1;
+}
+.hero-section .section-wrapper .img-container span {
+  position: absolute;
+  bottom: -13%;
+  left: -5%;
 }
 .hero-section .scroll {
   display: flex;
