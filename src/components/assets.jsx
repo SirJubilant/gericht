@@ -15,6 +15,7 @@ import logo from "../assets/Group 87.png";
 import badge3 from "../assets/Group 25.png";
 import badge2 from "../assets/Group 26.png";
 import badge1 from "../assets/Group 26 (1).png";
+import badge4 from "../assets/Group 27.png";
 import g from "../assets/G.png";
 import gal2 from "../assets/gal2.webp";
 import gal3 from "../assets/gal3.webp";
@@ -42,6 +43,7 @@ export {
     vid, 
     play,
     logo,
+    badge4,
     badge3,
     badge2,
     badge1,

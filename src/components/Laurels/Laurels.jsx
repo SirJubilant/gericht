@@ -1,4 +1,4 @@
-import { logo, r_spoon, badge1, badge2, badge3, chicken, g } from "../assets";
+import { logo, r_spoon, badge1, badge2, badge3, badge4, chicken, g } from "../assets";
 import "./laurels.css";
 
 export default function Laurels() {
@@ -31,7 +31,7 @@ export default function Laurels() {
             </li>
 
             <li>
-                <img src={ badge3 }/>
+                <img src={ badge4 }/>
                 <div className="laurel">
                     <h5>AA hospitality</h5>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>

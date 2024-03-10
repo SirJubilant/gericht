@@ -5,31 +5,48 @@ import {motion} from 'framer-motion'
 
 const menuRightVariants = {
     initial: {
-        y: -50,
+        x: -100,
         opacity: 0
     },
     visible: {
-        y: 0,
+        x: 0,
         opacity: 1,
         transition: {delay: 0.25, 
             duration: 1,
-            type: 'tween'
+            type: 'spring',
+            stiffness: 100,
+            ease: 'easeInOut'
+
         }
     }
 }
 
 const menuLeftVariants = {
     initial: {
-        y: 50,
+        x: 100,
         opacity: 0
     },
     visible: {
-        y: 0,
+        x: 0,
         opacity: 1,
         transition: {delay: 0.25, 
             duration: 1,
-            type: 'spring'
+            type: 'spring',
+            stiffness: 300,
+            ease: 'easeInOut'
+
         }
+    }
+}
+
+const imgVariants = {
+    initial: {
+        opacity: 0,
+        y: -5
+    },
+    animate: {
+        opacity: 1,
+        y: 0
     }
 }
 
@@ -41,7 +58,9 @@ export default function About() {
                 <motion.article 
                     variants = { menuLeftVariants }
                     initial = 'initial'
-                    animate = 'visible'
+                    whileInView = 'visible'
+                    viewport={{ once: true,
+                    }}
                 >
                     <h2>about us</h2>
                     <img src={ r_spoon } alt="" />
@@ -51,13 +70,19 @@ export default function About() {
                 </motion.article>
 
             <div className='about__section-img'>
-                <img src={ knife } alt="" />
+                <motion.img
+                 src={ knife } alt="" 
+                 variants={ imgVariants }
+                 initial= 'initial'
+                 whileInView='animate'/>
             </div>
 
                 <motion.article
                 variants = { menuRightVariants }
                     initial = 'initial'
-                    animate = 'visible'
+                    whileInView = 'visible'
+                    viewport={{ once: true,
+                    }}
                 >
                     <h2>our history</h2>
                     <img src={ r_spoon } alt="" />
