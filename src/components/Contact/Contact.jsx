@@ -3,17 +3,37 @@ import { motion } from 'framer-motion';
 import './contact.css';
 import Button from '../Button/Button';
 
-const hashVariants = {
+const slideUpVariants = {
     initial: {
-        y: -50,
-        opacity: 0
+        y: 30, 
+        opacity: 0,
+        blur: 5
     },
-    visible: {
+    animate: {
         y: 0,
         opacity: 1,
-        transition: {delay: 0.5, 
+        blur: 0,
+        transition: {delay: 0.25, 
             duration: 0.5,
-            type: 'spring'
+            ease: 'easeInOut'
+        }
+    }
+}
+
+const menuRightVariants = {
+    initial: {
+        x: -30,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {delay: 0.4, 
+            type: 'spring',
+            stiffness: 100,
+            duration: 1,
+            ease: 'easeInOut'
+
         }
     }
 }
@@ -25,36 +45,48 @@ export default function Contact() {
 
 
         <motion.article className="contact__info"
-        variants={hashVariants}
+        variants={ menuRightVariants }
         initial="initial"
-        animate="visible">
-            <h2 className="contact__info-header">
+        whileInView="animate"
+        viewport={{ once: true }}>
+            <motion.h2 className="contact__info-header"
+            variants={ slideUpVariants }>
                 contact
-            </h2>
-           <img src={ r_spoon } alt="" />
+            </motion.h2>
+           <motion.img src={ r_spoon } 
+           variants={ slideUpVariants }/>
 
 
-            <h3 className="contact__info-bigHeader">
+            <motion.h3 className="contact__info-bigHeader"
+            variants={ slideUpVariants }>
                 find us
-            </h3>
+            </motion.h3>
 
-            <p className="contact__info-address">
+            <motion.p className="contact__info-address"
+            variants={ menuRightVariants }>
                 lane ends bungalow, whatcroft hall lane, rudheath, CW9 75G
-            </p>
+            </motion.p>
 
             <div className="contact__info-time">
-                <h4>opening hours</h4>
-                <p>Mon - Fri: 10 am - 02:00am</p>
-                <p>Sat - Sun: 10 am - 03:00am</p>
+                <motion.h4
+                variants={ slideUpVariants }>opening hours</motion.h4>
+                <motion.p
+                variants={ menuRightVariants }>Mon - Fri: 10 am - 02:00am</motion.p>
+                <motion.p
+                variants={ menuRightVariants }>Sat - Sun: 10 am - 03:00am</motion.p>
             </div>
 
            <Button buttonText={ "visit us "} />
 
         </motion.article>    
 
-         <aside className="img-container">
+         <motion.aside className="img-container"
+         variants={ menuRightVariants }
+         initial='initial'
+         whileInView='animate'
+         viewport={{ once: true }}>
             <img src={ cocktail } />
-        </aside>
+        </motion.aside>
     </section>
   )
 }

@@ -1,5 +1,43 @@
 import { r_spoon, facebook, twitter, instagram } from '../assets';
-import './footer.css'
+import './footer.css';
+
+import { motion } from 'framer-motion';
+
+const menuRightVariants = {
+    initial: {
+        x: -30,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {delay: 0.4, 
+            type: 'spring',
+            stiffness: 100,
+            duration: 1,
+            ease: 'easeInOut'
+
+        }
+    }
+}
+
+const menuLeftVariants = {
+    initial: {
+        x: 30,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {delay: 0.4, 
+            type: 'spring',
+            stiffness: 100,
+            duration: 1,
+            ease: 'easeInOut'
+
+        }
+    }
+}
 
 
 export default function Footer() {
@@ -7,16 +45,24 @@ export default function Footer() {
     <footer className='footer'>
       <section className="footer__container">
 
-         <div className='contact'>
+         <motion.div className='contact'
+         variants={ menuLeftVariants }
+         initial='initial'
+         whileInView='animate'
+         viewport={{ once: true}}>
         <h3>contact us</h3>
         <p>9 W 53rd St. New York, NY 10019, USA</p>
           <div className="cell">
             <p>+1 212-344-1230</p>
             <p>+1 212-555-1230</p>
           </div>
-      </div>
+      </motion.div>
 
-      <div className='info'>
+      <motion.div className='info'
+      variants={ menuLeftVariants }
+      initial='initial'
+      whileInView='animate'
+      viewport={{ once: true}}>
         <h2>ger<span>&iacute;</span>cht</h2>
 
         <p>"The best way to find yourself is to lose yourself in the service of others."</p>
@@ -28,9 +74,13 @@ export default function Footer() {
           <img src={ instagram }/>
         </div>
          <p className='rights'>2021 Gericht. All Rights reserved.</p>
-      </div>
+      </motion.div>
 
-      <div className='working-hrs' >
+      <motion.div className='working-hrs' 
+      variants={ menuRightVariants }
+      initial='initial'
+      whileInView='animate'
+      viewport={{ once: true}}>
         <h3> working hours</h3>
         <div>
           <p>Monday-friday:</p>
@@ -40,7 +90,7 @@ export default function Footer() {
           <p>Saturday-Sunday</p>
           <p>07:00am-11:00pm</p>
         </div>
-      </div>
+      </motion.div>
 
       </section>
      
