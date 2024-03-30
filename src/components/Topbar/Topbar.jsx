@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./topbar.css";
 import { vert_line } from "../assets";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const navVariants ={
   hidden: {
@@ -33,11 +34,22 @@ export default function Topbar() {
                 initial ="hidden"
                 animate="visible"
                 >
-                    <li className="header__nav-item"><a className="header__nav-link" href="#">Home</a></li>
-                    <li className="header__nav-item"><a className="header__nav-link" href="#">Pages</a></li>
-                    <li className="header__nav-item"><a className="header__nav-link" href="#">Contact Us</a></li>
-                    <li className="header__nav-item"><a className="header__nav-link" href="#">Blog</a></li>
-                    <li className="header__nav-item"><a className="header__nav-link" href="#">Landing</a></li>
+                  
+                    <li className="header__nav-item">
+                      <NavLink className="header__nav-link" to="/">Home</NavLink>
+                    </li>
+                    <li className="header__nav-item">
+                      <NavLink className="header__nav-link" to="Pages">Pages</NavLink>
+                      </li>
+                    <li className="header__nav-item">
+                      <NavLink className="header__nav-link" to="#contact">Contact Us</NavLink>
+                      </li>
+                    <li className="header__nav-item">
+                      <NavLink className="header__nav-link" to="blog">Blog</NavLink>
+                      </li>
+                    <li className="header__nav-item">
+                      <NavLink className="header__nav-link" to="/">Landing</NavLink>
+                      </li>
                 </motion.ul>
                
                 <motion.ul className="header__nav-items2"

@@ -1,0 +1,17 @@
+@import '../../Styles/Variables/Variables';
+@import '../../Styles/reset';
+
+
+.page {
+    background: $primary-clr;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 28px 120px;
+    gap: 24px;
+
+    .button {
+      margin: 20px;
+    }
+}

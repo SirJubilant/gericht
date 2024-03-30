@@ -41,7 +41,7 @@ const menuRightVariants = {
 export default function Contact() {
   return (
     
-    <section className="contact__section">
+    <section className="contact__section" id='contact'>
 
 
         <motion.article className="contact__info"

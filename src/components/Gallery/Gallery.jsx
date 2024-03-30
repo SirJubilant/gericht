@@ -1,4 +1,4 @@
-import { gal1, gal2, gal3, gal4, r_spoon } from '../assets';
+import { gal1, gal2, gal3, gal4, instagram, r_spoon } from '../assets';
 import "./gallery.css";
 import Button from '../Button/Button';
 
@@ -67,12 +67,36 @@ export default function Gallery() {
             <Button buttonText={ "view more" } />
         </div>
 
-        <div className="gallery__images">
-            <img src={ gal1 } />
-            <img src={ gal2 } />
-            <img src={gal3 } />
-            <img src={ gal4 } />
-        </div>
+        <aside className="gallery__images">
+            <div className='img-container'>
+                 <img src={ gal1 } />
+                <div className="insta">
+                    <img src={instagram} />
+                </div>
+            </div>
+           
+
+           <div className='img-container'>
+                 <img src={ gal2 } />
+                <div className="insta">
+                    <img src={instagram} />
+                </div>
+            </div>
+
+            <div className='img-container'>
+                 <img src={ gal3 } />
+                <div className="insta">
+                    <img src={instagram} />
+                </div>
+            </div>
+
+            <div className='img-container'>
+                 <img src={ gal4 } />
+                <div className="insta">
+                    <img src={instagram} />
+                </div>
+            </div>
+        </aside>
     </section>
   )
 }
