@@ -90,7 +90,7 @@ footer {
 .footer {
   background-image: url("../../assets/bg1.webp");
   background-size: cover;
-  padding: 30rem 18rem 10rem 18rem;
+  padding: 20rem 18rem 1rem 18rem;
 }
 .footer__container {
   color: white;
