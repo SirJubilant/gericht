@@ -42,7 +42,7 @@ export default function Topbar() {
                       <NavLink className="header__nav-link" to="Pages">Pages</NavLink>
                       </li>
                     <li className="header__nav-item">
-                      <NavLink className="header__nav-link" to="#contact">Contact Us</NavLink>
+                      <NavLink className="header__nav-link" to="/">Contact Us</NavLink>
                       </li>
                     <li className="header__nav-item">
                       <NavLink className="header__nav-link" to="blog">Blog</NavLink>

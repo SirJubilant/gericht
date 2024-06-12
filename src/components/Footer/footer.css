@@ -92,6 +92,27 @@ footer {
   background-size: cover;
   padding: 20rem 18rem 1rem 18rem;
 }
+.footer .scroll-up {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 20px 0;
+}
+.footer .scroll-up div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .scroll-up a {
+  text-transform: uppercase;
+  color: #DCCA87;
+  align-items: center;
+  font-weight: bolder;
+  font-family: "Cormorant Upright", serif;
+  padding-top: 8px;
+  font-size: 12px;
+}
 .footer__container {
   color: white;
   text-align: center;

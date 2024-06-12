@@ -1,1 +1,110 @@
-/*# sourceMappingURL=blog.css.map */
+/* color vars */
+/* font vars */
+@font-face {
+  font-family: "Cormorant Upright", serif;
+  src: url(/src/assets/fonts/CormorantUpright-Medium.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Bestermind";
+  src: url(/src/assets/fonts/BestermindRegular.ttf);
+}
+/* color vars */
+/* font vars */
+@font-face {
+  font-family: "Cormorant Upright", serif;
+  src: url(/src/assets/fonts/CormorantUpright-Medium.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(/src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Bestermind";
+  src: url(/src/assets/fonts/BestermindRegular.ttf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a, p, span {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h2 {
+  font-size: clamp(0.8rem, 7vw, 1.8rem);
+}
+
+h1 {
+  font-size: clamp(1rem, 7vw, 5rem);
+}
+
+p {
+  font-size: clamp(0.5rem, 3vw, 1.6rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cormorant Upright", serif;
+  color: #DCCA87;
+  text-transform: capitalize;
+}
+
+section,
+header,
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 4.6rem 4.6rem 4.6rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+.blog {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  gap: 5rem;
+  justify-content: center;
+  text-align: center;
+}
+.blog__content {
+  padding: 10px;
+}
+.blog__content-header {
+  padding: 16px;
+  font-size: 6rem;
+}
+.blog__content p {
+  padding: 5px;
+  font-family: "Cormorant Upright", serif;
+  color: #AAAAAA;
+  font-size: 2rem;
+}/*# sourceMappingURL=blog.css.map */

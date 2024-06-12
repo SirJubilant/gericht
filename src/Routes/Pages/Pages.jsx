@@ -15,7 +15,7 @@ const getFoodCategories = async () => {
 
    function SearchBar({ userText, onUserTextChange }) {
     return (
-      <form>
+      <form className='form'>
         <input type="text" 
         placeholder='Search Meals' 
         value={userText}

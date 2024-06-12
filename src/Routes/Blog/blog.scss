@@ -1,0 +1,25 @@
+@import '../../Styles/Variables/Variables';
+@import '../../Styles/reset';
+
+.blog{
+    @include section-flex;
+    justify-content: center;
+     text-align: center;
+
+    &__content {
+        padding: 10px;
+
+        &-header {
+            padding: 16px;
+            font-size: 6rem;
+           
+        }
+
+        p {
+            padding: 5px;
+            font-family: $headerFont;
+            color: $tetiary-clr;
+            font-size: 2rem;
+        }
+    }
+}

@@ -21,7 +21,7 @@ const hashVariants = {
 export default function Showcase() {
   return (
     
-    <section className="hero-section">
+    <section className="hero-section" id='hero-section'>
         <motion.aside className="hashtags"
         variants ={hashVariants}
         initial="initial"
@@ -63,7 +63,7 @@ export default function Showcase() {
 
         <div className="scroll">
             <img src={ y_line } height="30px" width="10px" />
-            <a href='#'>scroll</a>
+            <a href='#footer'>scroll</a>
             </div>
     </section>
   )

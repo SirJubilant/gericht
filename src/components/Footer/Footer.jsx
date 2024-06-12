@@ -1,4 +1,4 @@
-import { r_spoon, facebook, twitter, instagram } from '../assets';
+import { r_spoon, facebook, twitter, instagram, y_line } from '../assets';
 import './footer.css';
 
 import { motion } from 'framer-motion';
@@ -42,7 +42,14 @@ const menuLeftVariants = {
 
 export default function Footer() {
   return (
-    <footer className='footer'>
+    <footer className='footer' id='footer'>
+
+        <div className="scroll-up">
+          <div>
+            <img src={ y_line } height="30px" width="10px" />
+            <a href='#hero-section'>Top</a>
+          </div>
+          </div>  
       <section className="footer__container">
 
          <motion.div className='contact'

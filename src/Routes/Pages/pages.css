@@ -87,7 +87,35 @@ footer {
     font-size: 55%;
   }
 }
-.page {
+.form {
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form input {
+  padding: 10px;
+  background-color: inherit;
+  border: 1px solid #AAAAAA;
+}
+.form input::-moz-placeholder {
+  color: #DCCA87;
+  font-family: "Cormorant Upright", serif;
+}
+.form input::placeholder {
+  color: #DCCA87;
+  font-family: "Cormorant Upright", serif;
+}
+.form input:focus {
+  outline: none;
+  border: none;
+}
+
+section {
+  background: #0c0b08;
+}
+section .page {
   background: #0c0b08;
   display: flex;
   align-items: center;
@@ -96,6 +124,6 @@ footer {
   padding: 28px 120px;
   gap: 24px;
 }
-.page .button {
+section .page .button {
   margin: 20px;
 }/*# sourceMappingURL=pages.css.map */
