@@ -12,6 +12,7 @@
     padding: 10px;
     background-color: inherit;
     border: 1px solid $tetiary-clr;
+    color: $accent-clr;
 
     &::placeholder {
       color: $accent-clr;
@@ -19,7 +20,6 @@
     }
 
     &:focus {
-      outline: none;
       border: none;
     }
   }
