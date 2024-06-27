@@ -10,7 +10,7 @@ import chef from "../assets/chef.webp";
 import chicken from "../assets/chicken.webp";
 import quote from "../assets/quote.png";
 import vid from "../assets/vid.webp";
-import play from "../assets/play.png";
+import play from "../assets/Play.png";
 import logo from "../assets/Group 87.png";
 import badge3 from "../assets/Group 25.png";
 import badge2 from "../assets/Group 26.png";
