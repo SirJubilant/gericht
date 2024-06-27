@@ -1,5 +1,5 @@
 import { vid, play } from '../assets';
-import "./Video.css";
+import "./video.css";
 
 export default function Video() {
   return (
