@@ -13,14 +13,11 @@
     background-color: inherit;
     border: 1px solid $tetiary-clr;
     color: $accent-clr;
+    font-family: $headerFont;
 
     &::placeholder {
       color: $accent-clr;
       font-family: $headerFont;
-    }
-
-    &:focus {
-      border: none;
     }
   }
 }

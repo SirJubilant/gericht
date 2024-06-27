@@ -98,6 +98,8 @@ footer {
   padding: 10px;
   background-color: inherit;
   border: 1px solid #AAAAAA;
+  color: #DCCA87;
+  font-family: "Cormorant Upright", serif;
 }
 .form input::-moz-placeholder {
   color: #DCCA87;
@@ -106,10 +108,6 @@ footer {
 .form input::placeholder {
   color: #DCCA87;
   font-family: "Cormorant Upright", serif;
-}
-.form input:focus {
-  outline: none;
-  border: none;
 }
 
 section {
