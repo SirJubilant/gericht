@@ -5,6 +5,7 @@
     background: url("../../assets/bg2.webp");
     background-size: cover;
     @include section-flex;
+    padding: 2rem 8rem;
 
     &__info {
         h4 {
@@ -39,20 +40,6 @@
             max-height: 28rem;
             cursor: pointer;
 
-            // &:hover img {
-             
-            //     .insta{
-            //         // transform: translateY(0);
-            //         // opacity: 1;
-            //         img {
-            //         // transform: translateY(-1rem);
-            //         // transition: transform .2s .2s;
-            //         // opacity: 1;
-            //         }
-            //     }
-            //    max-width: 100%;
-            // }
-
             .insta {
                 position: absolute;
                 top: 0; left: 0;
@@ -74,11 +61,16 @@
 
                     img {
                          transform: translateY(0);
-                         //transition: transform .2s .2s;
                          transition: all ease-in-out .4s;
                     }
                 }
             }
         }
+    }
+}
+
+@media (max-width: 778px) {
+    .gallery {
+        
     }
 }

@@ -41,7 +41,6 @@
             margin-bottom: 2rem;
              line-height: 1.2;
             color: $tetiary-clr; 
-            max-width: 32rem;
         }
     }
 
@@ -75,8 +74,8 @@
       
 
         img {
-             width: 28vw;
-             height: 28vw;
+             max-width: 40rem;
+             height: auto;
              z-index: 1;
         }
 
@@ -100,10 +99,21 @@
     }
 }
 
-// @media (max-width: 778px) {
+@media (max-width: 778px) {
 
-//     .section-wrapper{
-//         flex-direction: column-reverse;
-//     }
+    .section-wrapper{
+        flex-direction: column;
+        padding: 1rem;
+
+        .img-container {
+            padding: 0;margin: 0;
+            // width: 100vw;
+            // height: auto;
+            img {
+            // height: 100vw; width: 100vw;
+            }
+            
+        }
+    }
     
-// }
+}

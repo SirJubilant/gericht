@@ -86,6 +86,11 @@ footer {
   html {
     font-size: 55%;
   }
+  section,
+  header,
+  footer {
+    padding: 0px;
+  }
 }
 .about__section {
   background: url("../../assets/bg1.webp");
@@ -116,7 +121,6 @@ footer {
   padding: 0.4rem 0;
 }
 .about__section-content article p {
-  font-size: 1.2rem;
   padding: 0.4rem 0;
   margin: 1.6rem 0;
   line-height: 1.5;
@@ -133,4 +137,31 @@ footer {
 .about__section-content article:nth-child(1) img {
   margin-left: 91%;
   rotate: 180deg;
+}
+
+@media (max-width: 778px) {
+  .about__section-content {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .about__section-img {
+    rotate: 270deg;
+    width: 4rem;
+    overflow: hidden;
+  }
+  .about__section article {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .about__section article img {
+    margin: 0 auto;
+  }
+  .about__section article:nth-child(1) {
+    text-align: center;
+    align-items: center;
+  }
+  .about__section article:nth-child(1) img {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=about.css.map */

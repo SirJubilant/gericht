@@ -80,7 +80,7 @@ export default function Menu() {
             variants={ slideDownVariants }
           initial= 'initial'
           whileInView ='animate'
-          viewport={{ once: true,}}
+          viewport={{ once: true}}
                     >
             wine & beer</motion.h2>
             <ul>
@@ -158,8 +158,10 @@ export default function Menu() {
             </ul>
           </aside>
 
-          {/* Cocktail Srction starts */}
           
+          {/* Section image  */}
+          
+
           <motion.span className="menu__section-img"
           variants={ slideDownVariants }
           initial= 'initial'
@@ -168,6 +170,9 @@ export default function Menu() {
                     >
             <img src={ flask } alt="" />
           </motion.span>
+
+              {/* Cocktail Srction starts */}
+
 
           <aside className='menu__section-cocktail'>
             <motion.h2

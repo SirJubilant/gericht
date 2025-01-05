@@ -28,7 +28,7 @@
                 }
 
                 p {
-                    font-size: 1.2rem;
+                    // font-size: 1.2rem;
                     padding: 0.4rem 0;
                     margin: 1.6rem 0;
                     line-height: 1.5;
@@ -53,4 +53,44 @@
         }
 
     }
+}
+
+
+// media queries
+
+@media (max-width: 778px) {
+
+    .about__section{
+
+        &-content{
+            flex-direction: column;
+            gap: 0px
+        }
+
+        
+        &-img {
+            rotate: 270deg;
+            width: 4rem;
+            overflow: hidden;
+        }
+        article {
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+
+            img {
+                margin: 0 auto;;
+            }
+
+            &:nth-child(1) {
+            text-align: center;
+            align-items: center;
+
+            img {
+
+                margin: 0 auto;
+            }
+        }
+    }
+}
 }

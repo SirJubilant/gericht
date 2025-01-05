@@ -86,6 +86,11 @@ footer {
   html {
     font-size: 55%;
   }
+  section,
+  header,
+  footer {
+    padding: 0px;
+  }
 }
 .menu {
   display: flex;
@@ -164,4 +169,14 @@ footer {
   font-size: 2rem;
   font-family: "Cormorant Upright", serif;
   font-weight: 400;
+}
+
+@media (max-width: 778px) {
+  .menu__section {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 5rem;
+    background-color: aqua;
+  }
 }/*# sourceMappingURL=menu.css.map */

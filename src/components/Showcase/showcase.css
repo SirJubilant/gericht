@@ -86,6 +86,11 @@ footer {
   html {
     font-size: 55%;
   }
+  section,
+  header,
+  footer {
+    padding: 0px;
+  }
 }
 .hero-section {
   background: #0c0b08;
@@ -125,7 +130,6 @@ footer {
   margin-bottom: 2rem;
   line-height: 1.2;
   color: #AAAAAA;
-  max-width: 32rem;
 }
 .hero-section .section-wrapper .img-container {
   flex: 1 1 42rem;
@@ -153,8 +157,8 @@ footer {
   z-index: -1;
 }
 .hero-section .section-wrapper .img-container img {
-  width: 28vw;
-  height: 28vw;
+  max-width: 40rem;
+  height: auto;
   z-index: 1;
 }
 .hero-section .section-wrapper .img-container span {
@@ -173,4 +177,15 @@ footer {
        column-gap: 10px;
   top: 88%;
   right: 10%;
+}
+
+@media (max-width: 778px) {
+  .section-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .section-wrapper .img-container {
+    padding: 0;
+    margin: 0;
+  }
 }/*# sourceMappingURL=showcase.css.map */

@@ -86,6 +86,11 @@ footer {
   html {
     font-size: 55%;
   }
+  section,
+  header,
+  footer {
+    padding: 0px;
+  }
 }
 .blog {
   display: flex;

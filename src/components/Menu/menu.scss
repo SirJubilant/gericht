@@ -97,3 +97,11 @@
         }
     }
 }
+
+@media (max-width: 778px) {
+    .menu__section{
+             @include section-flex;
+             background-color: aqua;
+            
+    }
+}

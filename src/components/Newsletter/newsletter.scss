@@ -46,9 +46,12 @@
                 padding: 0.8rem 20rem 0.8rem 0.8rem;
                 margin-right: 1.2rem;
                 background: inherit;
+                color: $accent-clr;
+                font-family: $headerFont;
 
                 &::placeholder {
                     font-family: $headerFont;
+                    font-size: 1.2rem;
                 }
             }
 

@@ -72,4 +72,9 @@ footer {
   html {
     font-size: 55%;
   }
+  section,
+  header,
+  footer {
+    padding: 0px;
+  }
 }/*# sourceMappingURL=reset.css.map */

@@ -86,6 +86,11 @@ footer {
   html {
     font-size: 55%;
   }
+  section,
+  header,
+  footer {
+    padding: 0px;
+  }
 }
 .gallery {
   background: url("../../assets/bg2.webp");
@@ -94,6 +99,7 @@ footer {
   flex-direction: row;
   place-items: center;
   gap: 5rem;
+  padding: 2rem 8rem;
 }
 .gallery__info h4 {
   color: #ffffff;

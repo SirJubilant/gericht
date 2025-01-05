@@ -86,6 +86,11 @@ footer {
   html {
     font-size: 55%;
   }
+  section,
+  header,
+  footer {
+    padding: 0px;
+  }
 }
 .newsletter {
   background: #0c0b08;
@@ -128,12 +133,16 @@ footer {
   padding: 0.8rem 20rem 0.8rem 0.8rem;
   margin-right: 1.2rem;
   background: inherit;
+  color: #DCCA87;
+  font-family: "Cormorant Upright", serif;
 }
 .newsletter__container form input[type=email]::-moz-placeholder {
   font-family: "Cormorant Upright", serif;
+  font-size: 1.2rem;
 }
 .newsletter__container form input[type=email]::placeholder {
   font-family: "Cormorant Upright", serif;
+  font-size: 1.2rem;
 }
 .newsletter__container form input[type=submit] {
   background: #DCCA87;

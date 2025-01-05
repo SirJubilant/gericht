@@ -64,7 +64,6 @@
         flex-basis: 36rem;
         display: grid;
         align-items: flex-end;
-        // justify-content: flex-start;
 
        .chicken {
         grid-area: 1 / -1;
@@ -77,5 +76,25 @@
        }
 
 
+    }
+}
+
+@media (max-width: 778px) {
+    .section {
+        flex-direction: column;
+        padding: 5rem;     
+
+        &__content {
+            text-align: center;
+
+            img:nth-of-type(1) {
+            margin: 0 auto;
+        }
+    
+
+            &-list {
+               @include section-flex($direction:column);
+            }
+        }
     }
 }

@@ -86,6 +86,11 @@ footer {
   html {
     font-size: 55%;
   }
+  section,
+  header,
+  footer {
+    padding: 0px;
+  }
 }
 .section {
   background: url("../../assets/bg1.webp");
@@ -149,4 +154,23 @@ footer {
   grid-area: 1/-1;
   max-width: 32rem;
   transform: translateX(-3.6rem);
+}
+
+@media (max-width: 778px) {
+  .section {
+    flex-direction: column;
+    padding: 5rem;
+  }
+  .section__content {
+    text-align: center;
+  }
+  .section__content img:nth-of-type(1) {
+    margin: 0 auto;
+  }
+  .section__content-list {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 5rem;
+  }
 }/*# sourceMappingURL=laurels.css.map */
